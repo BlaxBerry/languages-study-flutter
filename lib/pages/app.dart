@@ -47,7 +47,10 @@ class _MyAppState extends State<MyApp> {
           title: Text(_pagesTitles[_selectedIndex]),
         ),
         // Body
-        body: _pagesContents[_selectedIndex],
+        body: Padding(
+          padding: const EdgeInsets.all(10),
+          child: _pagesContents[_selectedIndex],
+        ),
         // BottomNavigationBar
         bottomNavigationBar: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,

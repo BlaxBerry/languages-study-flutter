@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class FabAdd extends StatelessWidget {
-  const FabAdd({super.key});
+class FabSearch extends StatelessWidget {
+  const FabSearch({super.key});
 
   void _onClick() async {
     // TODO:
@@ -10,9 +10,8 @@ class FabAdd extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FloatingActionButton(
-      backgroundColor: Colors.green[400],
       onPressed: _onClick,
-      child: const Icon(Icons.add),
+      child: const Icon(Icons.search),
     );
   }
 }
