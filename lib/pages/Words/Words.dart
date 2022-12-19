@@ -1,17 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:language_study/widgets/FloatingActionButtons/fab_search.dart';
 
 import '../../widgets/FloatingActionButtons/fab_add.dart';
-import 'categories_list.dart';
+import '../../widgets/FloatingActionButtons/fab_search.dart';
 
-class CategoriesPage extends StatefulWidget {
-  const CategoriesPage({super.key});
+class WordsPage extends StatefulWidget {
+  const WordsPage({super.key});
 
   @override
-  State<CategoriesPage> createState() => _CategoriesPageState();
+  State<WordsPage> createState() => _WordsPageState();
 }
 
-class _CategoriesPageState extends State<CategoriesPage> {
+class _WordsPageState extends State<WordsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,7 +25,9 @@ class _CategoriesPageState extends State<CategoriesPage> {
           FabAdd(),
         ],
       ),
-      body: const CategoriesPageList(),
+      body: const Center(
+        child: Text('Words'),
+      ),
     );
   }
 }

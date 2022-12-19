@@ -11,7 +11,7 @@ class _MyPageState extends State<MyPage> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Center(child: Text('Statistics')),
+      body: Center(child: Text('My Page')),
     );
   }
 }
